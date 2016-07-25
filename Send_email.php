@@ -51,7 +51,9 @@ class Send_email extends CI_Controller {
 		$config['mailtype'] = 'html';
 		$config['starttls'] = true;
 		$config['newline']  = "\r\n";
-
+		// 'charset' => 'iso-8859-1',
+		// 			'wordwrap' => TRUE,
+		// 			'smtp_auth' => TRUE 
 		// Load email library and passing configured values to email library
 		$this->load->library('email', $config);
 		// Sender email address
